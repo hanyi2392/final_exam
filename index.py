@@ -8,6 +8,8 @@ import time
 
 app = Flask(__name__)
 GPIO.setmode(GPIO.BCM)                    #BOARD는 커넥터 pin번호 사용
+GPIO.setwarnings(False)
+
 TRIG = 23
 ECHO = 24
 print("Distance measurement in progress")
