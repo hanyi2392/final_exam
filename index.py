@@ -44,13 +44,5 @@ def led_on():
     except :
         return "fail"
 
-# @app.route("/led/off")
-# def led_off():
-#     try:
-#         GPIO.output(pin, GPIO.LOW)
-#         return "ok"
-#     except :
-#         return "fail"
-
 if __name__ == "__main__":
     app.run(host="0.0.0.0")
